@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := onc
+PRODUCT_RELEASE_NAME := onclite
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,10 +23,10 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := onc
-PRODUCT_NAME := omni_onc
+PRODUCT_DEVICE := onclite
+PRODUCT_NAME := omni_onclite
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Y3
+PRODUCT_MODEL := Redmi 7
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
