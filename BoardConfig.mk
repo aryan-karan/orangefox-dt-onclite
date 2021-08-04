@@ -1,6 +1,4 @@
 #
-# Copyright (C) 2019 The TwrpBuilder Open-Source Project
-#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -14,7 +12,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/onc
+LOCAL_PATH := device/xiaomi/onclite
 
 ALLOW_MISSING_DEPENDENCIES := true
 
@@ -50,8 +48,8 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/onc
-TARGET_KERNEL_CONFIG := onc-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/onclite
+TARGET_KERNEL_CONFIG := onclite-perf_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_VERSION := 4.9
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -63,7 +61,7 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := onc,onclite
+TARGET_OTA_ASSERT_DEVICE := onclite,onc
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -92,8 +90,8 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_onc
-TARGET_RECOVERY_DEVICE_MODULES := libinit_onc
+TARGET_INIT_VENDOR_LIB := libinit_onclite
+TARGET_RECOVERY_DEVICE_MODULES := libinit_onclite
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # Crypto
