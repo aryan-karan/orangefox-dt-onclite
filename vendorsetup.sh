@@ -72,11 +72,17 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_GREEN_LED=0
 	export OF_DONT_KEEP_LOG_HISTORY=1
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
-	export OF_NO_SPLASH_CHANGE=1
+	export OF_NO_SPLASH_CHANGE=0
 	export FOX_DELETE_INITD_ADDON=1
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
 	export FOX_INSTALLER_DEBUG_MODE=0
 	export OF_USE_SYSTEM_FINGERPRINT=0
+	export OF_MAINTAINER="Aryan Karan"
+	export FOX_VERSION="R11.1"
+	export FOX_USE_NANO_EDITOR=1
+	export FOX_BUILD_TYPE="Stable"
+	export FOX_DEVICE_MODEL="Xiaomi Redmi 7"
+	export FOX_USE_SED_BINARY=1
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
