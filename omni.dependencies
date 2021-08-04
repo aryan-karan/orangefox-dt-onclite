@@ -1,8 +1,8 @@
 [
   {
     "remote"      : "github",
-    "repository"  : "hadad/android_kernel_xiaomi_onc",
-    "target_path" : "kernel/xiaomi/onc",
+    "repository"  : "aryankaran/kernel_onc_new",
+    "target_path" : "kernel/xiaomi/onclite",
     "branch"      : "recovery",
     "clone-depth" : "1"
   }
