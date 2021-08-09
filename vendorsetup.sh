@@ -46,8 +46,8 @@ if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
 fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
-	export TARGET_DEVICE_ALT="onclite"
-	export OF_TARGET_DEVICES="onc,onclite"
+	export TARGET_DEVICE_ALT="onc"
+	export OF_TARGET_DEVICES="onclite,onc"
 	export OF_SCREEN_H=2280
 	export OF_STATUS_H=80
 	export OF_STATUS_INDENT_LEFT=48
