@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 OrangeFox Recovery Project
+# Copyright (C) 2019-2021 OrangeFox Recovery Project
 #
 # This software is licensed under the terms of the GNU General Public
 # License version 2, as published by the Free Software Foundation, and
@@ -86,6 +86,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_PATCH_AVB20=1
         export OF_USE_GREEN_LED=0
         export OF_ALLOW_DISABLE_NAVBAR=0
+        export FOX_USE_TAR_BINARY=1
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
