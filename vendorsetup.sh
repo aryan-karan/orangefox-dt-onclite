@@ -88,6 +88,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export OF_ALLOW_DISABLE_NAVBAR=0
         export FOX_USE_TAR_BINARY=1
 	export FOX_USE_BASH_SHELL=1
+        export FOX_USE_XZ_UTILS=1
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
