@@ -3,7 +3,7 @@
     "remote"      : "github",
     "repository"  : "aryankaran/kernel_xiaomi_onclite-1",
     "target_path" : "kernel/xiaomi/onclite",
-    "branch"      : "recovery",
+    "revision"      : "recovery",
     "clone-depth" : "1"
   }
 ]
