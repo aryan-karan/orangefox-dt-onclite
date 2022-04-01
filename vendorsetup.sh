@@ -81,7 +81,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_VERSION="R11.1"
 	export FOX_USE_NANO_EDITOR=1
 	export FOX_BUILD_TYPE="Stable"
-	export FOX_DEVICE_MODEL="Aryan's Redmi 7"
+	export FOX_DEVICE_MODEL="aryankaran XIAOMI Redmi 7"
 	export FOX_USE_SED_BINARY=1
 	export OF_PATCH_AVB20=1
         export OF_USE_GREEN_LED=0
