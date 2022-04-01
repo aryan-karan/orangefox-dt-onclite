@@ -1,6 +1,10 @@
-# Clone command
+# Clone + build command
 ```
-git clone https://github.com/aryan-karan/orangefox-dt-onclite -b fox_9.0 device/xiaomi/onclite
+git clone https://github.com/aryan-karan/orangefox-dt-onclite -b fox_9.0 device/xiaomi/onclite;\
+export USE_CCACHE=1;\
+. build/envsetup.sh;\
+lunch omni_onclite-eng;\
+mka recoveryimage
 
 ```
 
