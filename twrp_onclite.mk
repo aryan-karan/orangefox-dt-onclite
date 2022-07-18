@@ -17,6 +17,9 @@
 # Release name
 PRODUCT_RELEASE_NAME := onclite
 
+# Inherit frm onclite device
+$(call inherit-product, device/xiaomi/onclite/device.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 
@@ -29,6 +32,3 @@ PRODUCT_NAME := twrp_onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
 PRODUCT_MANUFACTURER := Xiaomi
-
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.model
