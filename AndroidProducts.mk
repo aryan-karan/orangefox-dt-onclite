@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_onclite.mk
+    $(LOCAL_DIR)/twrp_onclite.mk
+
+COMMON_LUNCH_CHOICES := \
+	omni_onclite-eng \
+	twrp_onclite-eng
