@@ -16,3 +16,8 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 
 #TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 #TARGET_HW_DISK_ENCRYPTION := true
+
+
+# HACK: Set vendor patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.security_patch=2099-12-31
