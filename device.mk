@@ -17,3 +17,5 @@ TW_USE_FSCRYPT_POLICY := 1
 
 #TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 #TARGET_HW_DISK_ENCRYPTION := true
+
+BOARD_RAMDISK_USE_LZMA := true
