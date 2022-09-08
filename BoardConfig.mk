@@ -40,17 +40,21 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 
+# Kernel - Prebuilt
+TARGET_PREBUILT_KERNEL := device/xiaomi/onclite/prebuilt/Image.gz-dtb
+
 # Kernel - Source
-TARGET_KERNEL_SOURCE := kernel/xiaomi/onclite
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := onclite-perf_defconfig
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_VERSION := 4.9
+# TARGET_KERNEL_SOURCE := kernel/xiaomi/onclite
+# TARGET_KERNEL_ARCH := arm64
+# TARGET_KERNEL_CONFIG := onclite-perf_defconfig
+# BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+# TARGET_KERNEL_VERSION := 4.9
 
 # Kernel - DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_SOURCE)/arch/$(TARGET_KERNEL_ARCH)/boot/dts/qcom/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/onclite/prebuilt/dtbo.img
+# BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_SOURCE)/arch/$(TARGET_KERNEL_ARCH)/boot/dts/qcom/dtbo.img
 
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -125,11 +129,10 @@ LZMA_COMPRESSION := -9
 TARGET_USES_LOGD := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_SUPERSU := true
-
-#TWRP FRAMERATE
-TW_FRAMERATE := 60
-
 TW_INCLUDE_PYTHON := true
+
+# FPS
+TW_FRAMERATE := 60
 
 # HACK: Prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
